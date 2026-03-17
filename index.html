@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café No. 15</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+<header class="hero" id="home">
+    <nav class="hero-nav">
+      <div class="logo">Cafe No.15</div>
+      <ul class="hero-nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#good-to-know">Good to Know</a></li>
+      </ul>
+    <div class="hero-lang-switch">
+      <button type="button" class="lang-btn active">EN</button>
+      <span>|</span>
+      <button type="button" class="lang-btn">DE</button>
+    </div>
+  </nav>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Garden Cafe Experience</p>
+    <h1>Cafe No.15</h1>
+    <p>UI Concept & Frontend Implementation</p>
+      <div class="hero-actions">
+        <a class="primary" href="#menu">View Menu</a>
+        <a class="secondary" href="#reservation">Reserve Table</a>
+        <a class="secondary visit-link" href="#visit-us">Visit Us</a>
+      </div>
+  </div>
+</header>
+
+  <section class="garden-banner" id="garden">
+    <div class="garden-overlay"></div>
+    <div class="garden-content">
+      <p class="garden-eyebrow">Garden is calling</p>
+      <h2>The gardening season is open!</h2>
+      <p>When the weather is nice, you can now enjoy our beautiful garden again.</p>
+      <button class="garden-link" type="button" id="open-garden">Explore the Garden</button>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="card">
+      <h2>About the Café</h2>
+      <p>
+        Café No. 15 blends premium craftsmanship with a serene garden lounge. Calm oak interiors,
+        curated playlists, and seasonal plates set the tone for every visit.
+      </p>
+      <button class="about-toggle" type="button" aria-expanded="false">
+        Read More
+      </button>
+      <div class="about-details">
+        <div class="about-extra" id="about-extra">
+          <h3>Our Concept</h3>
+          <p>Dear guests,</p>
+          <p>We are a place of relaxation.</p>
+          <p>
+            Visitors should take their time and enjoy their stay. Both in the shop and in our beautiful garden,
+            you are surrounded by nature. The large old trees provide welcome shade and create a peaceful place in the middle of the city.
+          </p>
+          <p>
+            Please leave work outside and keep laptops in your bags. Our sign “No Working Place” indicates that this café is meant for relaxing
+            and enjoying the moment.
+          </p>
+          <p>
+            With our principle of <strong>slow food</strong>, we guarantee high-quality regional and fresh ingredients, some organic, prepared with care when you order.
+          </p>
+          <p>This takes time.</p>
+          <p>
+            We do not offer fast food or fast service. Guests who are in a hurry may not enjoy the experience.
+          </p>
+          <p>Because we believe in avoiding food waste, sometimes dishes may sell out.</p>
+          <p>
+            We wish you a relaxing stay and hope you enjoy your time with us. We are always happy to receive
+            constructive feedback and improve your experience.
+          </p>
+          <p>Your <strong>Café No. 15</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="section-heading">
+      <p class="eyebrow">Our Craft</p>
+      <h2>Menu Highlights</h2>
+    </div>
+    <div class="menu-grid">
+      <article class="menu-card">
+        <button class="menu-card-toggle" type="button" aria-expanded="false" aria-controls="menu-panel-1">
+          <img src="Breakfast.png" alt="Breakfast" />
+          <div class="menu-card-title-row">
+            <h3>Breakfast</h3>
+            <span class="chevron" aria-hidden="true">
+              <svg viewBox="0 0 16 16" role="presentation">
+                <path d="M2 6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </div>
+        </button>
+        <div class="menu-card-panel" id="menu-panel-1">
+          <div class="menu-details">
+            <div class="menu-group">
+              <h4>Breakfast Classics</h4>
+              <div class="menu-item">
+                <span>English Breakfast</span>
+                <span>13.90€</span>
+              </div>
+              <div class="menu-item">
+                <span>Spanish Breakfast</span>
+                <span>13.90€</span>
+              </div>
+              <div class="menu-item">
+                <span>Italian Breakfast</span>
+                <span>13.90€</span>
+              </div>
+              <div class="menu-item">
+                <span>Greek Breakfast</span>
+                <span>13.90€</span>
+              </div>
+              <div class="menu-item">
+                <span>Cheese Breakfast</span>
+                <span>14.50€</span>
+              </div>
+              <div class="menu-item">
+                <span>Salmon Breakfast</span>
+                <span>16.50€</span>
+              </div>
+              <div class="menu-item">
+                <span>Sweet Breakfast</span>
+                <span>6.50€</span>
+              </div>
+              <div class="menu-item">
+                <span>Fruit Bowl</span>
+                <span>8.50€</span>
+              </div>
+              <div class="menu-item">
+                <span>Muesli Breakfast</span>
+                <span>8.90€</span>
+              </div>
+              <div class="menu-item">
+                <span>Vegan Breakfast</span>
+                <span>15.90€</span>
+              </div>
+              <div class="menu-item">
+                <span>Mexican Breakfast</span>
+                <span>15.90€</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <button class="menu-card-toggle" type="button" aria-expanded="false" aria-controls="menu-panel-2">
+          <img src="Coffee.png" alt="Coffee and Tea" />
+          <div class="menu-card-title-row">
+            <h3>Coffee &amp; Tea</h3>
+            <span class="chevron" aria-hidden="true">
+              <svg viewBox="0 0 16 16" role="presentation">
+                <path d="M2 6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </div>
+        </button>
+        <div class="menu-card-panel" id="menu-panel-2">
+          <div class="menu-details">
+            <div class="menu-group">
+              <h4>Espresso &amp; Crema</h4>
+              <div class="menu-item">
+                <span>Italian Espresso</span>
+                <span>2,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Double Italian Espresso</span>
+                <span>3,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Espresso Macchiato</span>
+                <span>2,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Double Espresso Macchiato</span>
+                <span>3,80 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Caffè Crema small</span>
+                <span>3,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Caffè Crema large</span>
+                <span>5,60 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Milky Classics</h4>
+              <div class="menu-item">
+                <span>Cappuccino</span>
+                <span>3,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Latte Macchiato</span>
+                <span>4,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Milchkaffee</span>
+                <span>4,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Glass warm / cold milk (0,3l)</span>
+                <span>2,20 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Lattes &amp; Specials</h4>
+              <div class="menu-item">
+                <span>Chai Latte (warm)</span>
+                <span>4,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Irish Coffee</span>
+                <span>6,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Baileys Coffee</span>
+                <span>6,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Iced Chai Latte</span>
+                <span>4,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Iced Latte</span>
+                <span>4,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Frappe (Greek iced coffee)</span>
+                <span>4,80 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Affogato</span>
+                <span>5,20 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Hot Chocolate &amp; Tea</h4>
+              <div class="menu-item">
+                <span>Hot Chocolate</span>
+                <span>4,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Hot Chocolate with cream</span>
+                <span>5,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Tea (Earl Grey, Waldbeere, Darjeeling, Sencha, Rooibos)</span>
+                <span>4,20 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Fresh Tea with mint &amp; lime</span>
+                <span>4,60 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Fresh Tea with ginger &amp; lime</span>
+                <span>4,60 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <button class="menu-card-toggle" type="button" aria-expanded="false" aria-controls="menu-panel-3">
+          <img src="cold-coffee.avif" alt="Cold Drinks" />
+          <div class="menu-card-title-row">
+            <h3>Cold Drinks</h3>
+            <span class="chevron" aria-hidden="true">
+              <svg viewBox="0 0 16 16" role="presentation">
+                <path d="M2 6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </div>
+        </button>
+        <div class="menu-card-panel" id="menu-panel-3">
+          <div class="menu-details">
+            <div class="menu-group">
+              <h4>Mineral Water</h4>
+              <div class="menu-item">
+                <span>Mineral water (still)</span>
+                <span>3,20 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mineral water (sparkling)</span>
+                <span>3,20 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Bottle mineral water (still)</span>
+                <span>5,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Bottle mineral water (sparkling)</span>
+                <span>5,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Coca Cola / Cola Zero / Fanta / Sprite</span>
+                <span>3,90 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Homemade Lemonades</h4>
+              <div class="menu-item">
+                <span>Citrus Yuzu with fresh lemon</span>
+                <span>5,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Raspberry Pomegranate with raspberries</span>
+                <span>5,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Passionfruit Orange with fresh orange</span>
+                <span>5,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Peach Pineapple with mint</span>
+                <span>5,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Hibiscus Rose with mint</span>
+                <span>5,90 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Fruit Juices</h4>
+              <div class="menu-item">
+                <span>Orange juice</span>
+                <span>3,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Apple juice</span>
+                <span>3,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Cherry juice</span>
+                <span>3,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>KiBa (Cherry Banana juice)</span>
+                <span>3,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Rhubarb juice</span>
+                <span>3,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Black currant juice</span>
+                <span>3,90 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Fruit Juice Spritzer</h4>
+              <div class="menu-item">
+                <span>Fruit juice spritzer</span>
+                <span>3,60 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Alcoholic Drinks</h4>
+              <div class="menu-item">
+                <span>Berliner Pilsner bottle beer</span>
+                <span>4,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Alcohol-free wheat beer</span>
+                <span>4,40 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Radler (beer with Fanta or Cola)</span>
+                <span>4,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Alster (beer with Sprite)</span>
+                <span>4,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Prosecco Freixenet (glass)</span>
+                <span>4,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Alcohol-free prosecco (small bottle)</span>
+                <span>4,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Prosecco Freixenet bottle</span>
+                <span>23,00 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mimosa (Prosecco with orange juice)</span>
+                <span>4,30 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <button class="menu-card-toggle" type="button" aria-expanded="false" aria-controls="menu-panel-4">
+          <img src="Dinner.png" alt="Lunch" />
+          <div class="menu-card-title-row">
+            <h3>Lunch</h3>
+            <span class="chevron" aria-hidden="true">
+              <svg viewBox="0 0 16 16" role="presentation">
+                <path d="M2 6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </div>
+        </button>
+        <div class="menu-card-panel" id="menu-panel-4">
+          <div class="menu-details">
+            <div class="menu-group">
+              <h4>Mediterranean Kitchen</h4>
+              <div class="menu-item">
+                <span>Grilled Eggplant &amp; Red Pepper (Greek Recipe)</span>
+                <span>12,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Vegetarian version</span>
+                <span>12,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Vegan version</span>
+                <span>12,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Baked Pumpkin with Feta Cheese</span>
+                <span>14,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Grilled Zucchini with Almonds and Salmon</span>
+                <span>18,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mediterranean Oven Vegetables - Vegetarian</span>
+                <span>13,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mediterranean Oven Vegetables - Vegan</span>
+                <span>13,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mediterranean Oven Vegetables - With Chicken</span>
+                <span>16,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mediterranean Oven Vegetables - With Grilled Salmon</span>
+                <span>18,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Bowl No.15 - Vegetarian</span>
+                <span>14,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Bowl No.15 - Vegan</span>
+                <span>14,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Bowl No.15 - With Grilled Chicken</span>
+                <span>17,90 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Bowl No.15 - With Grilled Fresh Salmon</span>
+                <span>18,90 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <button class="menu-card-toggle" type="button" aria-expanded="false" aria-controls="menu-panel-5">
+          <img src="cake-dessert.webp" alt="Cakes and Desserts" />
+          <div class="menu-card-title-row">
+            <h3>Cakes &amp; Desserts</h3>
+            <span class="chevron" aria-hidden="true">
+              <svg viewBox="0 0 16 16" role="presentation">
+                <path d="M2 6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </div>
+        </button>
+        <div class="menu-card-panel" id="menu-panel-5">
+          <div class="menu-details">
+            <div class="menu-group">
+              <h4>Cakes</h4>
+              <div class="menu-item">
+                <span>Chocolate Cake</span>
+                <span>5,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Strawberry Cake</span>
+                <span>5,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Vegan Banana Cake</span>
+                <span>5,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Walnut Cake</span>
+                <span>5,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Rhubarb Cake</span>
+                <span>5,50 €</span>
+              </div>
+            </div>
+            <div class="menu-group">
+              <h4>Warm Dessert</h4>
+              <div class="menu-item">
+                <span>Warm Apple Strudel with Vanilla Sauce and Fresh Cream</span>
+                <span>6,50 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="menu-card">
+        <button class="menu-card-toggle" type="button" aria-expanded="false" aria-controls="menu-panel-6">
+          <img src="waffles.webp" alt="Specials" />
+          <div class="menu-card-title-row">
+            <h3>Specials</h3>
+            <span class="chevron" aria-hidden="true">
+              <svg viewBox="0 0 16 16" role="presentation">
+                <path d="M2 6l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+          </div>
+        </button>
+        <div class="menu-card-panel" id="menu-panel-6">
+          <div class="menu-details">
+            <div class="menu-group">
+              <h4>Waffles</h4>
+              <div class="menu-item">
+                <span>Classic Waffle with Powdered Sugar</span>
+                <span>5,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Cherry Waffle</span>
+                <span>6,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Mango Waffle</span>
+                <span>6,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Chocolate Waffle</span>
+                <span>6,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Waffle with Vanilla Ice Cream</span>
+                <span>6,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Waffle with Chocolate Ice Cream</span>
+                <span>6,50 €</span>
+              </div>
+              <div class="menu-item">
+                <span>Cherry Waffle with Vanilla Ice Cream</span>
+                <span>6,50 €</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="section-heading">
+      <p class="eyebrow">Moments at Café No. 15</p>
+      <h2>Gallery</h2>
+      <p class="section-subtitle">
+        Image-focus media cards showcasing morning calm, craft moments, and evening warmth.
+      </p>
+    </div>
+    <div class="gallery-grid">
+      <article class="gallery-card" tabindex="0">
+        <div class="gallery-image">
+          <img src="coffee.png" alt="Coffee moment" />
+        </div>
+        <div class="gallery-copy">
+          <h3>Morning Rituals</h3>
+          <p>Citrus light, slow pours, seasonal pastry.</p>
+        </div>
+      </article>
+      <article class="gallery-card" tabindex="0">
+        <div class="gallery-image">
+          <img src="Gathering.jpg" alt="Gatherings" />
+        </div>
+        <div class="gallery-copy">
+          <h3>Gatherings</h3>
+          <p>Intimate tables for celebrations and tastings.</p>
+        </div>
+      </article>
+      <article class="gallery-card" tabindex="0">
+        <div class="gallery-image">
+          <img src="Wine.png" alt="Evening" />
+        </div>
+        <div class="gallery-copy">
+          <h3>Evening Mood</h3>
+          <p>Candle glow, seasonal bowls, curated pairings.</p>
+        </div>
+      </article>
+      <article class="gallery-card" tabindex="0">
+        <div class="gallery-image">
+          <img src="garden.png" alt="Garden table" />
+        </div>
+        <div class="gallery-copy">
+          <h3>Garden Table</h3>
+          <p>Layered textures and understated silhouettes for serene afternoons.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="reservation" id="reservation">
+    <div class="reservation-card">
+      <h2>Reservation</h2>
+      <p>Reserve one of our 35 tables for indoor or garden seating.</p>
+      <p>Call +123 456 7890 or email hello@cafeno15.com</p>
+      <button class="view-tables-button" type="button">View Tables</button>
+    </div>
+    <div class="reservation-form-card">
+      <form class="reservation-form">
+        <div class="form-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" placeholder="Your full name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            <span>Date</span>
+            <input type="date" required />
+          </label>
+          <label>
+            <span>Time</span>
+            <input type="time" required />
+          </label>
+          <label>
+            <span>Guests</span>
+            <input type="number" min="1" value="2" required />
+          </label>
+        </div>
+        <button class="submit-reservation primary" type="submit">Submit Reservation</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="table-gallery-modal" id="table-gallery">
+    <div class="table-gallery-backdrop" id="table-backdrop"></div>
+    <div class="table-gallery-content">
+      <button class="table-gallery-close" id="table-close" aria-label="Close gallery">×</button>
+      <div class="table-gallery-main">
+        <button class="gallery-nav prev" aria-label="Previous table">‹</button>
+        <img src="table1.png" alt="Table setup preview" id="table-main-image" />
+        <button class="gallery-nav next" aria-label="Next table">›</button>
+      </div>
+      <p>Browse our table setups before booking.</p>
+      <div class="table-gallery-grid" id="table-gallery-grid">
+        <img src="table1.png" alt="Table setup 1" data-index="0" />
+        <img src="table2.png" alt="Table setup 2" data-index="1" />
+        <img src="table3.png" alt="Table setup 3" data-index="2" />
+        <img src="table5.png" alt="Table setup 4" data-index="3" />
+      </div>
+    </div>
+  </div>
+
+  <section class="good-to-know" id="good-to-know">
+    <div class="section-heading">
+      <p class="eyebrow">Helpful notes</p>
+      <h2>Good to Know</h2>
+    </div>
+    <div class="good-grid">
+      <article class="info-card">
+        <h3>Holiday &amp; Celebration Package</h3>
+        <p>Planning a special occasion? We can preset table decor, candles, and premium linens.</p>
+        <ul>
+          <li>Complimentary table decorations &amp; candlelight</li>
+          <li>Optional rose-to-go or high-quality linens</li>
+          <li>Call 0171 52 77 554 for availability</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Café Policy</h3>
+        <p>We are a calm space—laptops stay in bags so every guest can unwind.</p>
+        <ul>
+          <li>Please keep the atmosphere tranquil for all guests.</li>
+          <li>Laptop use is not permitted inside the café.</li>
+          <li>We serve seasonal plates; some dishes may sell out.</li>
+        </ul>
+      </article>
+      <article class="info-card">
+        <h3>Café Updates</h3>
+        <p>Stay tuned for menu changes, special events, and limited offers.</p>
+        <ul>
+          <li>New seasonal dishes arrive with the weather.</li>
+          <li>Follow us for weekend specials and tasting evenings.</li>
+          <li>Reserve in advance for Fridays and Saturdays.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="customer-reviews" id="customer-reviews">
+    <div class="section-heading">
+      <p class="eyebrow">Stories</p>
+      <h2>Customer Reviews</h2>
+      <p class="section-subtitle">A calm, luxurious spot for mornings…</p>
+    </div>
+    <div class="reviews-grid">
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"A calm, luxurious spot for mornings. The coffee ritual is perfect."</p>
+        <span>— Lena M.</span>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Soft lighting and seasonal menus keep this café special every visit."</p>
+        <span>— Marcel T.</span>
+      </article>
+      <article class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"The garden experience feels private yet welcoming—ideal for long catch-ups."</p>
+        <span>— Noor A.</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Guests Say</h2>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+
+        <div class="testimonial-card">
+          <img src="marcel.png" alt="Lena" />
+          <h3>Lena M.</h3>
+          <p>★★★★★</p>
+          <p>Every sip is perfectly balanced — the garden light makes it unforgettable.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="marcel.png" alt="Marcel" />
+          <h3>Marcel T.</h3>
+          <p>★★★★☆</p>
+          <p>Celebrate, work, or unwind — the staff always tailors the experience.</p>
+        </div>
+
+        <div class="testimonial-card">
+          <img src="marcel.png" alt="Noor" />
+          <h3>Noor A.</h3>
+          <p>★★★★★</p>
+          <p>The evening menu and candlelit seating keep me coming back.</p>
+        </div>
+
+      </div>
+    </div>
+
+</section>
+
+  <div class="garden-modal" id="garden-modal" aria-hidden="true">
+    <div class="garden-modal-backdrop" id="garden-backdrop"></div>
+    <div class="garden-modal-content">
+      <button class="garden-modal-close" id="garden-close" aria-label="Close garden view">×</button>
+      <img src="garden.png" alt="Garden view" />
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-col" id="visit-us">
+        <h3>Opening Hours</h3>
+        <p>Monday: 08:00 – 20:00</p>
+        <p>Tuesday: Closed</p>
+        <p>Wednesday: 08:00 – 20:00</p>
+        <p>Thursday: 08:00 – 20:00</p>
+        <p>Friday: 08:00 – 20:00</p>
+        <p>Saturday: 09:00 – 19:30</p>
+        <p>Sunday: 09:00 – 18:30</p>
+      </div>
+      <div class="footer-col">
+        <h3>Visit Us</h3>
+        <p>Café No. 15</p>
+        <p>Brandenburger Str. 15</p>
+        <p>14467 Potsdam</p>
+        <p>Germany</p>
+        <a class="map-link" href="https://maps.google.com" target="_blank" rel="noreferrer">
+          <img src="Map.png" alt="Google Maps preview" />
+          <span>Open in Google Maps</span>
+        </a>
+      </div>
+      <div class="footer-col">
+        <h3>Stay in Touch</h3>
+        <p>Stay updated with our seasonal menus and events.</p>
+        <form class="footer-newsletter">
+          <input type="email" placeholder="you@email.com" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-col">
+        <h3>Imprint</h3>
+        <p>Café No. 15</p>
+        <p>Owner: Alex Passi</p>
+        <p>Brandenburger Str. 15</p>
+        <p>14467 Potsdam, Germany</p>
+        <p>Telephone: +49 171 5277554</p>
+        <p>Email: info@cafe-no-15.com</p>
+        <p>VAT ID No.: DE321383942</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const openGarden = document.getElementById("open-garden");
+    const modal = document.getElementById("garden-modal");
+    const closeBtn = document.getElementById("garden-close");
+    const backdrop = document.getElementById("garden-backdrop");
+
+    const toggleGarden = (open) => {
+      modal.setAttribute("aria-hidden", open ? "false" : "true");
+      modal.classList.toggle("active", open);
+    };
+
+    openGarden.addEventListener("click", () => toggleGarden(true));
+    closeBtn.addEventListener("click", () => toggleGarden(false));
+    backdrop.addEventListener("click", () => toggleGarden(false));
+    modal.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && modal.classList.contains("active")) {
+        toggleGarden(false);
+      }
+    });
+
+    const aboutToggle = document.querySelector(".about-toggle");
+    const aboutCard = document.querySelector(".about .card");
+
+    if (aboutToggle && aboutCard) {
+      aboutToggle.addEventListener("click", () => {
+        const expanded = aboutCard.classList.toggle("expanded");
+        aboutToggle.setAttribute("aria-expanded", expanded.toString());
+        aboutToggle.textContent = expanded ? "Show Less" : "Read More";
+      });
+    }
+
+    const menuCards = document.querySelectorAll(".menu-card");
+    let activeMenuCard = null;
+
+    menuCards.forEach((card) => {
+      const toggle = card.querySelector(".menu-card-toggle");
+
+      toggle.addEventListener("click", () => {
+        const isSameCard = activeMenuCard === card;
+        if (activeMenuCard && activeMenuCard !== card) {
+          activeMenuCard.classList.remove("expanded");
+          activeMenuCard
+            .querySelector(".menu-card-toggle")
+            .setAttribute("aria-expanded", "false");
+        }
+
+        const shouldOpen = !isSameCard || !card.classList.contains("expanded");
+        card.classList.toggle("expanded", shouldOpen);
+        toggle.setAttribute("aria-expanded", shouldOpen.toString());
+        activeMenuCard = shouldOpen ? card : null;
+      });
+    });
+
+    const viewTables = document.querySelector(".view-tables-button");
+    const tableModal = document.getElementById("table-gallery");
+    const tableClose = document.getElementById("table-close");
+    const tableBackdrop = document.getElementById("table-backdrop");
+
+    const toggleTableGallery = (open) => {
+      tableModal.classList.toggle("active", open);
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+
+    viewTables.addEventListener("click", () => toggleTableGallery(true));
+    tableClose.addEventListener("click", () => toggleTableGallery(false));
+    tableBackdrop.addEventListener("click", () => toggleTableGallery(false));
+
+    const tableImages = ["table1.png", "table2.png", "table3.png", "table5.png"];
+    const mainImage = document.getElementById("table-main-image");
+    const thumbnails = document.querySelectorAll(".table-gallery-grid img");
+    const prevBtn = document.querySelector(".gallery-nav.prev");
+    const nextBtn = document.querySelector(".gallery-nav.next");
+    let currentIndex = 0;
+
+    const updateGallery = (index) => {
+      currentIndex = (index + tableImages.length) % tableImages.length;
+      mainImage.src = tableImages[currentIndex];
+      thumbnails.forEach((thumb) => {
+        thumb.classList.toggle("active", Number(thumb.dataset.index) === currentIndex);
+      });
+    };
+
+    thumbnails.forEach((thumb) => {
+      thumb.addEventListener("click", () => {
+        updateGallery(Number(thumb.dataset.index));
+      });
+    });
+
+    prevBtn.addEventListener("click", () => updateGallery(currentIndex - 1));
+    nextBtn.addEventListener("click", () => updateGallery(currentIndex + 1));
+
+    // initialize
+    updateGallery(0);
+  </script>
+</body>
+</html>
