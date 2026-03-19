@@ -651,6 +651,7 @@ main section.fade-in:nth-of-type(7) {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
+    }
     /* ===== FLOATING IMAGE ===== */
 
 .garden-img {
