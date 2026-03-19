@@ -647,7 +647,38 @@ main section.fade-in:nth-of-type(7) {
     display: flex;
     gap: 1.25rem;
     justify-content: center;
-  }
+    /* ===== FLOATING IMAGE ===== */
+
+.garden-img {
+  position: absolute;
+  width: 320px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: transform 0.2s ease-out;
+  pointer-events: none;
+}
+
+/* ===== POPUP ===== */
+
+.garden-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.9);
+  z-index: 999;
+}
+
+.garden-popup img {
+  max-width: 80%;
+  max-height: 80%;
+}
 
 .good-to-know-badge {
   position: absolute;
