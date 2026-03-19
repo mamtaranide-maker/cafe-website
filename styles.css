@@ -519,12 +519,16 @@ main section.fade-in:nth-of-type(7) {
   padding: 0 1.5rem;
   background-image: url("garden.png");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 60%;
   background-attachment: fixed;
+  transition: background-size 8s ease;
   overflow: hidden;
   color: #fff;
 }
 
+.garden-banner:hover {
+  background-size: 110%;
+}
 .garden-banner::before {
   content: "";
   position: absolute;
