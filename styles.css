@@ -1,7 +1,7 @@
 :root {
   --dark-brown: #2b1d17;
   --cream: #f5efe9;
-  --gold: #c59d5f;
+  --gold: lab(67.13% 7.23 37.85);
   --gold-light: #e3c68f;
   --beige: #eadac2;
   --stone: #d5c8b5;
@@ -37,7 +37,7 @@
   color: #fff;
 
   transition: all 0.3s ease;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 28px 35px rgba(0, 0, 0, 0.25);
 }
 
 .btn:hover {
@@ -61,7 +61,7 @@
 }
 
 .submit-reservation {
-  color: #2b1d17;
+  color: lch(67.49% 38.97 79.49);
 }
 
 *,
