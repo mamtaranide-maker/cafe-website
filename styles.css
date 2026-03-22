@@ -14,15 +14,35 @@
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
-.submit-reservation,
-.view-tables-button,
-.garden-link,
-.about-toggle,
-.footer-newsletter button,
-.info-newsletter button {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
+/* ===== GLOBAL BUTTON ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.9rem 2.2rem;
+
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
   color: #fff;
-  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.35);
 }
 
 .submit-reservation {
@@ -747,17 +767,6 @@ main section.fade-in:nth-of-type(7) {
   }
 }
 
-.primary,
-.secondary {
-  padding: 0.95rem 2.2rem;
-  border-radius: 999px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 600;
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
-}
 
 .hero-actions .primary,
 .hero-actions .secondary {
@@ -789,23 +798,6 @@ main section.fade-in:nth-of-type(7) {
   filter: brightness(1.08);
 }
 
-.view-tables-button {
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
-  color: #fff;
-  border: none;
-  padding: 0.85rem 2.5rem;
-  border-radius: 999px;
-  font-weight: 600;
-  letter-spacing: 0.2em;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-}
-
-.view-tables-button:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.35);
-  filter: brightness(1.05);
-}
 
 @keyframes heroFadeIn {
   from {
@@ -850,9 +842,6 @@ main {
   box-shadow: 0 40px 70px var(--shadow-soft);
 }
 
-.card:hover {
-  transform: translateY(-6px);
-}
 
 .about .card h2 {
   margin: 0;
@@ -879,24 +868,15 @@ main {
 }
 
   .about-toggle {
-    margin-top: 1.5rem;
-    align-self: flex-start;
-    background: linear-gradient(135deg, var(--gold), var(--gold-light));
-    color: #fff;
-    border: none;
-    border-radius: 999px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
-    padding: 0.95rem 2rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, background 0.3s ease;
-  }
+  margin-top: 1.5rem;
+  align-self: flex-start;
+  cursor: pointer;
+}
 
   .about-toggle:hover {
     transform: translateY(-2px);
     filter: brightness(1.1);
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   }
 
 .about-extra {
