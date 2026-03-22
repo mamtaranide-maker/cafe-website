@@ -1,7 +1,7 @@
 :root {
   --dark-brown: #2b1d17;
   --cream: #f5efe9;
-  --gold: lab(67.13% 7.23 37.85);
+  --gold: #c59d5f;
   --gold-light: #e3c68f;
   --beige: #eadac2;
   --stone: #d5c8b5;
@@ -14,54 +14,19 @@
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
-/* ===== GLOBAL BUTTON ===== */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0.9rem 2.2rem;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-
-  text-transform: uppercase;
-  letter-spacing: 0.25em;
-
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-
-  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+.submit-reservation,
+.view-tables-button,
+.garden-link,
+.about-toggle,
+.footer-newsletter button,
+.info-newsletter button {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light)) !important;
   color: #fff;
-
-  transition: all 0.3s ease;
-  box-shadow: 0 28px 35px rgba(0, 0, 0, 0.25);
-}
-
-.btn:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.35);
-}
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0.9rem 2.2rem;
-
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-
-
-.btn:hover {
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 28px 55px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
 }
 
 .submit-reservation {
-  color: lch(67.49% 38.97 79.49);
+  color: #2b1d17;
 }
 
 *,
@@ -782,6 +747,17 @@ main section.fade-in:nth-of-type(7) {
   }
 }
 
+.primary,
+.secondary {
+  padding: 0.95rem 2.2rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
 
 .hero-actions .primary,
 .hero-actions .secondary {
@@ -813,6 +789,23 @@ main section.fade-in:nth-of-type(7) {
   filter: brightness(1.08);
 }
 
+.view-tables-button {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: #fff;
+  border: none;
+  padding: 0.85rem 2.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.view-tables-button:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 26px 50px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.05);
+}
 
 @keyframes heroFadeIn {
   from {
@@ -857,6 +850,9 @@ main {
   box-shadow: 0 40px 70px var(--shadow-soft);
 }
 
+.card:hover {
+  transform: translateY(-6px);
+}
 
 .about .card h2 {
   margin: 0;
@@ -883,15 +879,24 @@ main {
 }
 
   .about-toggle {
-  margin-top: 1.5rem;
-  align-self: flex-start;
-  cursor: pointer;
-}
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+    padding: 0.95rem 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, background 0.3s ease;
+  }
 
   .about-toggle:hover {
     transform: translateY(-2px);
     filter: brightness(1.1);
-   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
   }
 
 .about-extra {
@@ -2724,8 +2729,10 @@ main {
   border: none;
   background: var(--gold);
   color: #2b1d17;
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
   cursor: pointer;
 }
  .table-gallery-modal { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; z-index: 50; } .table-gallery-modal.active { display: flex; } .table-gallery-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.65); } .table-gallery-content { position: relative; max-width: 780px; width: min(90%,780px); background: #fff; border-radius: 28px; padding: 2rem; box-shadow: 0 35px 65px rgba(0,0,0,0.35); display:flex; flex-direction:column; gap:1rem; z-index:1; }
@@ -2741,5 +2748,5 @@ main {
 .review-card { background: #fff; border-radius: 20px; padding: 1.8rem; box-shadow: 0 25px 45px rgba(0,0,0,0.08); display: flex; flex-direction: column; gap: 0.5rem; transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: left; }
 .review-card:hover { transform: translateY(-6px); box-shadow: 0 30px 60px rgba(0,0,0,0.15); }
 .review-stars { color: var(--gold); letter-spacing: 0.2em; font-size: 0.85rem; }
-.review-card span { font-weight: 600; color: var(--dark-brown); letter-spacing: 0.08em; }
-.review-card span { font-weight: 600; color: var(--dark-brown); letter-spacing: 0.08em; }
+.review-card span { font-weight: 600; color: var(--dark-brown); letter-spacing: 0.25em; }
+.review-card span { font-weight: 600; color: var(--dark-brown); letter-spacing: 0.25em; }
