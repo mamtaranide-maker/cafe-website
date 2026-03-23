@@ -924,6 +924,24 @@ Read More
       });
     });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const langButtons = document.querySelectorAll('.lang-btn');
+
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.textContent.trim().toLowerCase();
+
+      document.querySelectorAll('[data-en]').forEach(el => {
+        const text = el.getAttribute(`data-${lang}`);
+        if (text) el.textContent = text;
+      });
+
+      langButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+});
+</script>
     prevBtn.addEventListener("click", () => updateGallery(currentIndex - 1));
     nextBtn.addEventListener("click", () => updateGallery(currentIndex + 1));
 
